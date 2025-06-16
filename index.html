@@ -1,33 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-    <style>
-      button{
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weapons Store</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      color: crimson;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 5px 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: crimson;
+      border-radius: 5px;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .button {
       color: white; 
-      background-color: red; 
+      background-color: crimson; 
       border: none; 
       border-radius: 10px; 
       padding: 10px 20px; 
-      font-size: 16px; 
+      font-size: 18px; 
       cursor: pointer; 
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
       transition: background-color 0.3s ease;
-      }
-    </style>
+      margin-top: 20px;
+    }
+
+    .button:hover {
+      background-color: darkred;
+    }
+  </style>
 </head>
 <body>
-    <h1>hello to our site</h1>
-    <h1>we started to lrearn how to make and organiz projectin git and githup </h1>
-    <h1>make a repo and start to pull it </h1>
-    <h1>make changes and push the changes</h1>
-    <button onmouseover="this.style.backgroundColor='darkred';"
-onmouseout="this.style.backgroundColor='red';"
-onclick="alert('Hello World');"> Click Me</button>
+  <header>
+    <h1>Weapons Store</h1>
+  </header>
 
-    
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Welcome to the ultimate weapons store!</h2>
+    <p>Explore our collection of modern and classic weapons. Safe deals, fast delivery.</p>
+    <button class="button" onclick="alert('Thank you for your interest!')">Shop Now</button>
+  </main>
 </body>
 </html>
